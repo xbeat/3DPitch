@@ -8,9 +8,10 @@
 		<style>
 			body {
 				background-color: #000;
-				color: #888;
-				font-family: Helvetica;
-				line-height: 26px;
+				color: #fff;
+				font-family: Monospace;
+				font-size: 13px;
+				text-align: center;
 				margin: 0px;
 				overflow: hidden;
 			}
@@ -27,6 +28,13 @@
 
 			a:hover {
 				color: #fff;
+			}
+
+			#info {
+			  position: absolute;
+			  top: 0px; 
+			  width: 100%;
+			  padding: 5px;
 			}
 
 			#container {
@@ -57,6 +65,10 @@
 	</head>
 	<body>
 	<div id='container'></div>
+	<div id="info">
+		<br>camera orbit/zoom/pan with left/middle/right mouse button
+		<br>orbit/zoom/pan with 1-finger move/pinch/3-finger move
+	</div>
 	<script src="js/three.js"></script>
 	<script src="js/OrbitControls.js"></script>
 	<script src="js/start.js"></script>
